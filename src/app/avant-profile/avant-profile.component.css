@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 10em;
+    /* height: 10em; */
 }
 
 .middle-half {
@@ -27,7 +27,7 @@
     justify-content: center;
     align-content: center;
     margin-bottom: 10em;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .middle-half-header {
@@ -40,6 +40,7 @@
     font-size: 25px;
     color: white;
     margin-left: 18px;
+    margin-bottom: -37px;
 }
 
 .middle-half-tabs {
@@ -47,7 +48,8 @@
     width: 100%;
     display: inline-flex;
     align-items: flex-end;
-    margin-bottom: 231px;
+    margin-bottom: 35px;
+    margin-top: 2px;
 }
 
 .tabcontent {
@@ -96,13 +98,40 @@
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: white;
+    color: black;
   }
   
   /* Style the tab content */
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: none;
     border-top: none;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .button-holder {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3em;
+  }
+
+  #update-button {
+    height: 60px;
+    width: 11em;
+    background: #30c078;
+    border: 0;
+    color: white;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    cursor: pointer;
   }
