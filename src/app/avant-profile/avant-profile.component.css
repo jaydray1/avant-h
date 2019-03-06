@@ -1,0 +1,16 @@
+.prof-main {
+    height: 100%;
+    width: 100%;
+}
+.top-half {
+    height: 10em;
+    background-color: 	#3060a8;
+    width: 100%;
+}
+
+.middle-half {
+    height: 80%;
+    width: 80%;
+    background-color: yellow;
+    z-index: 10;
+}
