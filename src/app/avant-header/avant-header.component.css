@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    background-color: #184878;
+    height: 3em;
+    width: 100%;
+}
+.logo-image {
+    height: 20px;
+}
