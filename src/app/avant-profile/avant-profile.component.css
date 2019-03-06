@@ -108,6 +108,10 @@
     padding: 6px 12px;
     border: none;
     border-top: none;
+    height: 100%;
+    background-color: white;
+    margin-top: -35px;
+    font-family: 'Lato', sans-serif;
   }
 
   input[type=text] {
@@ -115,12 +119,14 @@
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
   }
 
   .button-holder {
       display: flex;
       justify-content: space-around;
       margin-top: 3em;
+      margin-bottom: 4em;
   }
 
   #update-button {
@@ -134,4 +140,15 @@
     overflow: visible;
     padding: 0;
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .former-form {
+      margin-top: 5em;
+      margin-left: 2em;
+      width: 80%;
+  }
+
+  .form-group {
+      margin-bottom: 1em;
   }
