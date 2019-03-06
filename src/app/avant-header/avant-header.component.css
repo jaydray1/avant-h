@@ -1,9 +1,35 @@
 .main {
     display: flex;
+    align-items: center;
     background-color: #184878;
     height: 3em;
     width: 100%;
 }
 .logo-image {
     height: 20px;
+    margin-left: 1em;
+    cursor: pointer;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
