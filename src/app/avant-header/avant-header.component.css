@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 .main {
     display: flex;
     align-items: center;
     background-color: #184878;
     height: 3em;
     width: 100%;
+    font-family: 'Lato', sans-serif;
 }
 .logo-image {
     height: 20px;
@@ -26,7 +29,7 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 25px;
     text-decoration: none;
   }
   

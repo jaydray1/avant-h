@@ -1,6 +1,41 @@
 <div class="prof-main">
   <div class="top-half"></div>
   <div class="bottom-half">
-    <div class="middle-half"></div>
+    <div class="middle-half">
+      <div class="middle-half-header-wrap">
+        <div class="middle-half-header">User Settings</div>
+        <div class="middle-half-tabs">
+            <div class="tab">
+                <button id="defaultOpen" class="tablinks" (click)="showTabContent($event, 'Profile')">Profile</button>
+                <button class="tablinks" (click)="showTabContent($event, 'Email')">Email</button>
+                <button class="tablinks" (click)="showTabContent($event, 'Phone')">Phone</button>
+                <button class="tablinks" (click)="showTabContent($event, 'Password')">Password</button>
+                <button class="tablinks" (click)="showTabContent($event, 'Security')">Security</button>
+            </div>
+          </div>
+            <div id="Profile" class="tabcontent">
+                <p>First Name</p>
+                <form>
+                    <div class="form-group">
+                      <label for="name">First Name</label>
+                      <input type="text" class="form-control" id="name" required>
+                    </div>
+               
+                    <div class="form-group">
+                      <label for="alterEgo">Last Name</label>
+                      <input type="text" class="form-control" id="alterEgo">
+                    </div>
+               
+                    <button type="submit" class="btn btn-success">Update</button>
+               
+                  </form>
+            </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
+              </div>
+      </div>
+    </div>
   </div>
 </div>
