@@ -14,23 +14,47 @@
             </div>
           </div>
             <div id="Profile" class="tabcontent">
-                <form class="former-form">
+                <form class="former-form" (ngSubmit)="onSubmit()" #userForm="ngForm">
                     <div class="form-group">
                       <label for="firstName">First Name</label>
-                      <input type="text" class="form-control" id="firstName" required>
+                      <input 
+                        [(ngModel)]="model.firstName" 
+                        name="firstName"
+                        type="text" 
+                        class="form-control" 
+                        id="firstName" 
+                        required>
                     </div>
 
                     <div class="form-group">
                         <label for="middleName">Middle Name (Optional)</label>
-                        <input type="text" class="form-control" id="middleName">
+                        <input 
+                          [(ngModel)]="model.middleName" 
+                          name="middleName"
+                          type="text" 
+                          class="form-control" 
+                          id="middleName">
                       </div>
                
                     <div class="form-group">
                       <label for="lastName">Last Name</label>
-                      <input type="text" class="form-control" id="lastName">
+                      <input 
+                        [(ngModel)]="model.lastName" 
+                        name="lastName"
+                        type="text" 
+                        class="form-control" 
+                        id="lastName" 
+                        required>
                     </div>
                
-                    <div class="button-holder"><button type="submit" id="update-button">Update</button></div>
+                    <div class="button-holder">
+                      <button
+                        type="submit" 
+                        id="update-button" 
+                        class="btn btn-success"
+                        [disabled]="!userForm.form.valid"
+                        >Update</button>
+                    </div>
                
                   </form>
             </div>

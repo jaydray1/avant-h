@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AvantHeaderComponent } from './avant-header/avant-header.component';
@@ -14,7 +15,8 @@ import { AvantFooterComponent } from './avant-footer/avant-footer.component';
     AvantFooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
