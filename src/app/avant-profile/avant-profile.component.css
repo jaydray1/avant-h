@@ -143,6 +143,9 @@
     cursor: pointer;
     font-family: 'Lato', sans-serif;
   }
+  #update-button[disabled] {
+    cursor: not-allowed;
+  }
 
   .former-form {
       margin-top: 5em;

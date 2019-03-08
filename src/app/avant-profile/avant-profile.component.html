@@ -14,7 +14,7 @@
             </div>
           </div>
             <div id="Profile" class="tabcontent">
-                <form class="former-form" (ngSubmit)="onSubmit()" #userForm="ngForm">
+                <form class="former-form" (ngSubmit)="submitUpdatedUser()" #userForm="ngForm">
                     <div class="form-group">
                       <label for="firstName">First Name</label>
                       <input 
@@ -60,9 +60,21 @@
             </div>
               
               <div id="Email" class="tabcontent">
-                <h3>Look At Me!</h3>
-                <p>I'm another tab.</p> 
+                <h3>Look {{currentTabString}}</h3>
+                <p>I'm a {{currentTabString}} tab.</p> 
               </div>
+              <div id="Phone" class="tabcontent">
+                  <h3>Look {{currentTabString}}</h3>
+                  <p>I'm a {{currentTabString}} tab.</p> 
+                </div>
+                <div id="Password" class="tabcontent">
+                    <h3>Look {{currentTabString}}</h3>
+                    <p>I'm a {{currentTabString}} tab.</p> 
+                  </div>
+                  <div id="Security" class="tabcontent">
+                      <h3>Look {{currentTabString}}</h3>
+                      <p>I'm a {{currentTabString}} tab.</p> 
+                    </div>
       </div>
     </div>
   </div>

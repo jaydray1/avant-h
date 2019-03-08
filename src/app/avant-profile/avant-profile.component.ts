@@ -9,7 +9,8 @@ import { UserProfile } from './userModel';
 })
 
 export class AvantProfileComponent implements OnInit {
-  model: UserProfile;
+  model: UserProfile = new UserProfile('', '', '');
+  currentTabString: string;
 
   constructor(
     @Inject(DOCUMENT) private document: Document
@@ -17,16 +18,20 @@ export class AvantProfileComponent implements OnInit {
 
   ngOnInit() {
     document.getElementById('defaultOpen').click();
+    this.currentTabString = document.getElementById('defaultOpen').getAttribute('id').toString();
   }
 
-  onSubmit() {
+  submitUpdatedUser() {
     const reqBody = new UserProfile(
       this.model.firstName,
       this.model.middleName,
       this.model.lastName);
+      console.log('submitted');
+      
   }
 
   showTabContent(e, tabType) {
+    this.currentTabString = tabType;
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName('tabcontent');
     for (i = 0; i < tabcontent.length; i++) {
